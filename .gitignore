@@ -25,3 +25,5 @@ Thumbs.db
 # Misc editor backups
 *~
 *.swp
+
+/.quarto/
