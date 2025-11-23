@@ -3,6 +3,8 @@ title: "Hello, Tiny Data World"
 description: "Kicking off this blog with a fruity dataset."
 date: 2025-11-22
 categories: [intro, meta]
+image: ../images/taiwan-guava.png
+image-alt: 'Guava'
 format:
   html:
     toc: false
