@@ -1,9 +1,0 @@
-.quarto/
-docs/
-_site/
-site_libs/
-.DS_Store
-Thumbs.db
-*.swp
-__pycache__/
-*.pyc
