@@ -1,1 +1,27 @@
-/.quarto/
+# Quarto output directory (never commit this)
+_site/
+_freeze/
+
+# Quarto cache (optional)
+.quarto/
+
+# RStudio project files (if ever used)
+.Rproj.user/
+*.Rproj
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS Finder metadata
+.DS_Store
+
+# Windows thumbnail + metadata
+Thumbs.db
+
+# Jupyter notebook checkpoint garbage
+.ipynb_checkpoints/
+
+# Misc editor backups
+*~
+*.swp
