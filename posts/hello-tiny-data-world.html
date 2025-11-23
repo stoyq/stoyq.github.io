@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-11-22">
-<meta name="description" content="Kicking off this blog with a microscopic dataset.">
+<meta name="description" content="Kicking off this blog with a fruity dataset.">
 
 <title>Hello, Tiny Data World – Tiny Data Stories</title>
 <style>
@@ -150,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <h1 class="title">Hello, Tiny Data World</h1>
                   <div>
         <div class="description">
-          Kicking off this blog with a microscopic dataset.
+          Kicking off this blog with a fruity dataset.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -187,17 +187,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>This is my very first tiny data story.</p>
-<p>Right now, the goal is just to make sure everything works: the blog, the code, and the render.<br>
-So here’s a microscopic dataset to launch this thing.</p>
-<div id="69aa8610" class="cell" data-execution_count="1">
+<p>It’s the weekend, end of 1st week of Block 3 at UBC MDS. All my assignments that were due at 6pm have been submitted. There is a small window of a break before we get to Monday and it all starts over. Anyway, I’ve been meaning to start a tiny blog (micro blog?) like this for a while, but never got to it, so now I’m finally here. You’re reading this because I finally found some time to put it all together.</p>
+<p>The whole point of this tiny blog is to get me to practice looking at small bits and pieces of data regularly. Every now and then I come across some interesting small datasets, or I personally have some interesting small datasets from my own life that I’m interested in, and I want to try to use code and data analysis to answer some questions. So ya, that’s the point of this… micro blog. Let’s call it that for now.</p>
+<p>Right now, the goal is just to make sure everything works: the blog, the code, and the render. Everything should me more or less: load data, do analysis, add commentary, push blog post, and let quarto publish automatically. I don’t want to deal with the details of managing a blog site, so that’s why I’m letting quarto and github power all of this.</p>
+<p>Well, let’s start with our very first tiny data set just to make sure things are running as expected. Here I’m going to use python pandas and just create a small table of some of my favourite fruits. That is all, stay tuned for more!</p>
+<div id="32dd4ec9" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"fruit"</span>: [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"kiwi"</span>],</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"rating"</span>: [<span class="dv">8</span>, <span class="dv">6</span>, <span class="dv">9</span>]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"fruit"</span>: [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"kiwi"</span>, <span class="st">"guava"</span>, <span class="st">"mango"</span>, <span class="st">"pear"</span>],</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"rating"</span>: [<span class="dv">8</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">8</span>, <span class="dv">7</span>]</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 
 
@@ -223,7 +225,22 @@ So here’s a microscopic dataset to launch this thing.</p>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
 <td>kiwi</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>guava</td>
 <td>9</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>mango</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>pear</td>
+<td>7</td>
 </tr>
 </tbody>
 </table>
