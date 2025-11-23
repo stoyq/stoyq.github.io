@@ -1,16 +1,23 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Johnson Chuang’s Data Science Page",
+    "objectID": "posts/hello-tiny-data-world.html",
+    "href": "posts/hello-tiny-data-world.html",
+    "title": "Hello, Tiny Data World",
     "section": "",
-    "text": "This website is where all the Data Science learning happens!!"
+    "text": "This is my very first tiny data story.\nRight now, the goal is just to make sure everything works: the blog, the code, and the render.\nSo here’s a microscopic dataset to launch this thing.\n\nimport pandas as pd\n\ndf = pd.DataFrame({\n    \"fruit\": [\"apple\", \"banana\", \"kiwi\"],\n    \"rating\": [8, 6, 9]\n})\ndf\n\n\n\n\n\n\n\n\nfruit\nrating\n\n\n\n\n0\napple\n8\n\n\n1\nbanana\n6\n\n\n2\nkiwi\n9"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Before studying MDS at UBC, Johnson Chuang is a visual effects artist working in Vancouver. He specializes in effects (FX) and 3D camera tracking (matchmove). He has worked at studios such as Disney, Sony, Image Engine, and Digital Domain. He is credited in movies such as Moana 2, Avengers: Infinity War, Super Pets, The Maze Runner and Elysium.\nHe also has a background in computer science (B.Sc. from UBC and M.Sc. from SFU) with special interest in computer graphics, visualization, algorithms and data structures."
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tiny-data-stories",
+    "section": "",
+    "text": "Hello, Tiny Data World\n\n\n\nintro\n\nmeta\n\n\n\nKicking off this blog with a microscopic dataset.\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\nNo matching items"
   }
 ]
