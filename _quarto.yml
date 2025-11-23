@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "tiny-data-stories"
+  title: "Tiny Data Stories"
   navbar:
     right:
       - about.qmd
@@ -13,7 +13,7 @@ website:
 format:
   html:
     theme:
-      - cosmo
+      - flatly
       - brand
     css: styles.css
 
