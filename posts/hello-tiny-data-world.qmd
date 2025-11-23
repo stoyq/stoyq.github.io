@@ -17,7 +17,7 @@ The whole point of this tiny blog is to get me to practice looking at small bits
 
 Right now, the goal is just to make sure everything works: the blog, the code, and the render. Everything should me more or less: load data, do analysis, add commentary, push blog post, and let quarto publish automatically. I don't want to deal with the details of managing a blog site, so that's why I'm letting quarto and github power all of this.
 
-Well, let's start with our very first tiny data set just to make sure things are running as expected. Here I'm going to use python pandas and just create a small table of some of my favourite fruits. That is all! Stay tuned for more!
+Well, let's start with our very first tiny data set just to make sure things are running as expected. Here I'm going to use python pandas and just create a small table of some of my favourite fruits. That is all, stay tuned for more!
 
 ```{python}
 import pandas as pd
