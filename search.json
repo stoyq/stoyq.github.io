@@ -18,6 +18,6 @@
     "href": "index.html",
     "title": "tiny-data-stories",
     "section": "",
-    "text": "Hello, Tiny Data World\n\n\n\nintro\n\nmeta\n\n\n\nKicking off this blog with a microscopic dataset.\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\nNo matching items"
+    "text": "&lt;article class=\"post-list-item\"&gt;\n  &lt;header&gt;\n    \n      &lt;p class=\"post-date\"&gt;Nov 22, 2025&lt;/p&gt;\n    \n\n    &lt;h2 class=\"post-title\"&gt;\n      &lt;a href=\"/posts\\hello-tiny-data-world.qmd\"&gt;Hello, Tiny Data World&lt;/a&gt;\n    &lt;/h2&gt;\n\n\n      &lt;p class=\"post-categories\"&gt;\n        \n          &lt;span class=\"category-badge\"&gt;intro&lt;/span&gt;\n        \n          &lt;span class=\"category-badge\"&gt;meta&lt;/span&gt;\n        \n      &lt;/p&gt;\n    \n  &lt;/header&gt;\n\n\n    &lt;p class=\"post-description\"&gt;Kicking off this blog with a microscopic dataset.&lt;/p&gt;\n  \n\n  &lt;p class=\"post-read-more\"&gt;\n    &lt;a href=\"/posts\\hello-tiny-data-world.qmd\"&gt;Read more →&lt;/a&gt;\n  &lt;/p&gt;\n&lt;/article&gt;\n\nNo matching items"
   }
 ]

@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-description','listing-date','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-description","listing-date","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -204,37 +204,37 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="aW50cm8lMkNtZXRh" data-listing-date-sort="1763798400000" data-listing-file-modified-sort="1763874503034" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
-<div class="thumbnail"><a href="./posts/hello-tiny-data-world.html" class="no-external">
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="post-list">
+<pre><code>&lt;article class="post-list-item"&gt;
+  &lt;header&gt;
+    
+      &lt;p class="post-date"&gt;Nov 22, 2025&lt;/p&gt;
+    
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+    &lt;h2 class="post-title"&gt;
+      &lt;a href="/posts\hello-tiny-data-world.qmd"&gt;Hello, Tiny Data World&lt;/a&gt;
+    &lt;/h2&gt;
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hello-tiny-data-world.html" class="no-external">Hello, Tiny Data World</a>
-</h3>
-<div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('aW50cm8='); return false;">intro</div>
+      &lt;p class="post-categories"&gt;
+        
+          &lt;span class="category-badge"&gt;intro&lt;/span&gt;
+        
+          &lt;span class="category-badge"&gt;meta&lt;/span&gt;
+        
+      &lt;/p&gt;
+    
+  &lt;/header&gt;
 
-<div class="listing-category" onclick="window.quartoListingCategory('bWV0YQ=='); return false;">meta</div>
 
-</div>
-<div class="delink listing-description"><a href="./posts/hello-tiny-data-world.html" class="no-external">
-<p>Kicking off this blog with a microscopic dataset.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/hello-tiny-data-world.html" class="no-external">
-<div class="listing-date">
-Nov 22, 2025
-</div>
-</a>
-</div>
-</div>
+    &lt;p class="post-description"&gt;Kicking off this blog with a microscopic dataset.&lt;/p&gt;
+  
+
+  &lt;p class="post-read-more"&gt;
+    &lt;a href="/posts\hello-tiny-data-world.qmd"&gt;Read more →&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/article&gt;</code></pre>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
