@@ -7,12 +7,15 @@ about:
     - icon: github
       text: Github
       href: https://github.com/stoyq
+      target: _blank
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/johnsonchuang/
+      target: _blank
     - icon: imdb
       text: IMDb
       href: https://www.imdb.com/name/nm5373467/
+      target: _blank
 
 ---
 
