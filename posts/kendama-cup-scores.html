@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-11-30">
-<meta name="description" content="Visualizing the score distribution">
+<meta name="description" content="Visualizing the score distribution.">
 
 <title>Scores from the Kendama World Cup 2025 – Tiny Data Stories</title>
 <style>
@@ -144,7 +144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <h1 class="title">Scores from the Kendama World Cup 2025</h1>
                   <div>
         <div class="description">
-          Visualizing the score distribution
+          Visualizing the score distribution.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -188,8 +188,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>World Cup 2025 Final Scores</figcaption>
 </figure>
 </div>
-<p>Without much thought, I decided to look at the distribution of scores. To my surprise the distribution looks bell-shaped, with a very obvious peak at 1000. So while the table form is good to look up player names and scores, the histogram is even more insightful. I did not expect scores from a competition to also be normally distributed. What steps can I take next to see if the scores are normally distributed? Can I apply Central Limit Theorem to make any inferences?</p>
-<div id="13464269" class="cell" data-execution_count="1">
+<p>I decided to plot out the distribution of scores.</p>
+<div id="a82b9566" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -217,6 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>To my surprise the distribution looks bell-shaped, with a very obvious peak at 1000! So while the table form is useful to look up player names and scores, the histogram is even more insightful. I did not expect scores from a competition to also be distributed with such a familar shape. What steps can I take next to see if the scores are normally distributed? Can I apply Central Limit Theorem to make any inferences?</p>
 
 
 

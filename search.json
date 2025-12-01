@@ -4,14 +4,14 @@
     "href": "posts/kendama-cup-scores.html",
     "title": "Scores from the Kendama World Cup 2025",
     "section": "",
-    "text": "My friend recently showed me the final scores from the Kendama World Cup 2025:\n\n\n\nWorld Cup 2025 Final Scores\n\n\nWithout much thought, I decided to look at the distribution of scores. To my surprise the distribution looks bell-shaped, with a very obvious peak at 1000. So while the table form is good to look up player names and scores, the histogram is even more insightful. I did not expect scores from a competition to also be normally distributed. What steps can I take next to see if the scores are normally distributed? Can I apply Central Limit Theorem to make any inferences?\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nscores = [\n    2043, 1622, 1457, 1448, 1403, 1395, 1371, 1347, 1285, 1277,\n    1206, 1205, 1159, 1113, 1063, 1062, 1008, 1000, 1000, 956,\n    948, 939, 938, 924, 917, 911, 910, 885, 872, 869, 820, 797,\n    772, 729, 703, 666, 665, 662, 578, 536, 485, 472, 452, 340,\n    306, 273, 82\n]\n\ndf = pd.DataFrame({'score': scores})\n\nplt.figure(figsize=(10,6))\nplt.hist(df['score'], bins=10, edgecolor='black')\nplt.xlabel('Score')\nplt.ylabel('Frequency')\nplt.title('Kendama World Cup 2025 Scores Histogram')\nplt.show()"
+    "text": "My friend recently showed me the final scores from the Kendama World Cup 2025:\n\n\n\nWorld Cup 2025 Final Scores\n\n\nI decided to plot out the distribution of scores.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nscores = [\n    2043, 1622, 1457, 1448, 1403, 1395, 1371, 1347, 1285, 1277,\n    1206, 1205, 1159, 1113, 1063, 1062, 1008, 1000, 1000, 956,\n    948, 939, 938, 924, 917, 911, 910, 885, 872, 869, 820, 797,\n    772, 729, 703, 666, 665, 662, 578, 536, 485, 472, 452, 340,\n    306, 273, 82\n]\n\ndf = pd.DataFrame({'score': scores})\n\nplt.figure(figsize=(10,6))\nplt.hist(df['score'], bins=10, edgecolor='black')\nplt.xlabel('Score')\nplt.ylabel('Frequency')\nplt.title('Kendama World Cup 2025 Scores Histogram')\nplt.show()\n\n\n\n\n\n\n\n\nTo my surprise the distribution looks bell-shaped, with a very obvious peak at 1000! So while the table form is useful to look up player names and scores, the histogram is even more insightful. I did not expect scores from a competition to also be distributed with such a familar shape. What steps can I take next to see if the scores are normally distributed? Can I apply Central Limit Theorem to make any inferences?"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Tiny Data Stories",
     "section": "",
-    "text": "Scores from the Kendama World Cup 2025\n\n\n\nvisualization\n\ndistribution\n\nkendama\n\n\n\nVisualizing the score distribution\n\n\n\n\n\nNov 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHello, Tiny Data World\n\n\n\nintro\n\nmeta\n\n\n\nKicking off this blog with a fruity dataset.\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Scores from the Kendama World Cup 2025\n\n\n\nvisualization\n\ndistribution\n\nkendama\n\n\n\nVisualizing the score distribution.\n\n\n\n\n\nNov 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHello, Tiny Data World\n\n\n\nintro\n\nmeta\n\n\n\nKicking off this blog with a fruity dataset.\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
