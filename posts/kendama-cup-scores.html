@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-11-30">
-<meta name="description" content="Are the final scores normally distributed?">
+<meta name="description" content="Visualizing the score distribution">
 
-<title>Visualizing Kendama Cup Scores – Tiny Data Stories</title>
+<title>Scores from the Kendama World Cup 2025 – Tiny Data Stories</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,10 +141,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Visualizing Kendama Cup Scores</h1>
+      <h1 class="title">Scores from the Kendama World Cup 2025</h1>
                   <div>
         <div class="description">
-          Are the final scores normally distributed?
+          Visualizing the score distribution
         </div>
       </div>
                           <div class="quarto-categories">
@@ -181,8 +181,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>My friend sent me a picture of the top final scores from the recent Kendama Cut 2025. I decided to look at the distribution, and was quite surprised that the scores are distributed like a bell-shape. Does that mean they are normally distributed? Can I apply Central Limit Theorem to make any inferences?</p>
-<div id="68a91916" class="cell" data-execution_count="1">
+<p>My friend recently showed me the final scores from the Kendama World Cup 2025:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/kendama-world-cup-2025-scores.jpg" class="img-fluid figure-img"></p>
+<figcaption>World Cup 2025 Final Scores</figcaption>
+</figure>
+</div>
+<p>Without much thought, I decided to look at the distribution of scores. To my surprise the distribution looks bell-shaped, with a very obvious peak at 1000. So while the table form is good to look up player names and scores, the histogram is even more insightful. I did not expect scores from a competition to also be normally distributed. What steps can I take next to see if the scores are normally distributed? Can I apply Central Limit Theorem to make any inferences?</p>
+<div id="13464269" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
