@@ -1,0 +1,40 @@
+---
+title: "Scores from the Kendama World Cup 2025"
+description: "Visualizing the score distribution"
+date: 2025-11-30
+categories: [visualization, distribution, kendama]
+image: ../images/kendama-world-cup-logo.jpg
+image-alt: 'Kendama World Cup Logo'
+format:
+  html:
+    toc: false
+    code-fold: false
+---
+
+My friend recently showed me the final scores from the Kendama World Cup 2025:
+
+![World Cup 2025 Final Scores](../images/kendama-world-cup-2025-scores.jpg)
+
+Without much thought, I decided to look at the distribution of scores. To my surprise the distribution looks bell-shaped, with a very obvious peak at 1000. So while the table form is good to look up player names and scores, the histogram is even more insightful. I did not expect scores from a competition to also be normally distributed. What steps can I take next to see if the scores are normally distributed? Can I apply Central Limit Theorem to make any inferences?
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+scores = [
+    2043, 1622, 1457, 1448, 1403, 1395, 1371, 1347, 1285, 1277,
+    1206, 1205, 1159, 1113, 1063, 1062, 1008, 1000, 1000, 956,
+    948, 939, 938, 924, 917, 911, 910, 885, 872, 869, 820, 797,
+    772, 729, 703, 666, 665, 662, 578, 536, 485, 472, 452, 340,
+    306, 273, 82
+]
+
+df = pd.DataFrame({'score': scores})
+
+plt.figure(figsize=(10,6))
+plt.hist(df['score'], bins=10, edgecolor='black')
+plt.xlabel('Score')
+plt.ylabel('Frequency')
+plt.title('Kendama World Cup 2025 Scores Histogram')
+plt.show()
+```
