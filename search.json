@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "posts/hello-tiny-data-world.html",
-    "href": "posts/hello-tiny-data-world.html",
-    "title": "Hello, Tiny Data World",
+    "objectID": "posts/kendama-cup-scores.html",
+    "href": "posts/kendama-cup-scores.html",
+    "title": "Visualizing Kendama Cup Scores",
     "section": "",
-    "text": "This is my very first tiny data story.\nIt’s the weekend, end of 1st week of Block 3 at UBC MDS. All my assignments that were due at 6pm have been submitted. There is a small window of a break before we get to Monday and it all starts over. Anyway, I’ve been meaning to start a tiny blog (micro blog?) like this for a while, but never got to it, so now I’m finally here. You’re reading this because I finally found some time to put it all together.\nThe whole point of this tiny blog is to get me to practice looking at small bits and pieces of data regularly. Every now and then I come across some interesting small datasets, or I personally have some interesting small datasets from my own life that I’m interested in, and I want to try to use code and data analysis to answer some questions. So ya, that’s the point of this… micro blog. Let’s call it that for now.\nRight now, the goal is just to make sure everything works: the blog, the code, and the render. Everything should me more or less: load data, do analysis, add commentary, push blog post, and let quarto publish automatically. I don’t want to deal with the details of managing a blog site, so that’s why I’m letting quarto and github power all of this.\nWell, let’s start with our very first tiny data set just to make sure things are running as expected. Here I’m going to use python pandas and just create a small table of some of my favourite fruits. That is all, stay tuned for more!\n\nimport pandas as pd\n\ndf = pd.DataFrame({\n    \"fruit\": [\"apple\", \"banana\", \"kiwi\", \"guava\", \"mango\", \"pear\"],\n    \"rating\": [8, 6, 8, 9, 8, 7]\n})\ndf\n\n\n\n\n\n\n\n\nfruit\nrating\n\n\n\n\n0\napple\n8\n\n\n1\nbanana\n6\n\n\n2\nkiwi\n8\n\n\n3\nguava\n9\n\n\n4\nmango\n8\n\n\n5\npear\n7"
+    "text": "My friend sent me a picture of the top final scores from the recent Kendama Cut 2025. I decided to look at the distribution, and was quite surprised that the scores are distributed like a bell-shape. Does that mean they are normally distributed? Can I apply Central Limit Theorem to make any inferences?\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nscores = [\n    2043, 1622, 1457, 1448, 1403, 1395, 1371, 1347, 1285, 1277,\n    1206, 1205, 1159, 1113, 1063, 1062, 1008, 1000, 1000, 956,\n    948, 939, 938, 924, 917, 911, 910, 885, 872, 869, 820, 797,\n    772, 729, 703, 666, 665, 662, 578, 536, 485, 472, 452, 340,\n    306, 273, 82\n]\n\ndf = pd.DataFrame({'score': scores})\n\nplt.figure(figsize=(10,6))\nplt.hist(df['score'], bins=10, edgecolor='black')\nplt.xlabel('Score')\nplt.ylabel('Frequency')\nplt.title('Kendama World Cup 2025 Scores Histogram')\nplt.show()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tiny Data Stories",
+    "section": "",
+    "text": "Scores from the Kendama World Cup 2025\n\n\n\nvisualization\n\ndistribution\n\nkendama\n\n\n\nVisualizing the score distribution\n\n\n\n\n\nNov 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHello, Tiny Data World\n\n\n\nintro\n\nmeta\n\n\n\nKicking off this blog with a fruity dataset.\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -14,10 +21,10 @@
     "text": "About this blog"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Tiny Data Stories",
+    "objectID": "posts/hello-tiny-data-world.html",
+    "href": "posts/hello-tiny-data-world.html",
+    "title": "Hello, Tiny Data World",
     "section": "",
-    "text": "Hello, Tiny Data World\n\n\n\nintro\n\nmeta\n\n\n\nKicking off this blog with a fruity dataset.\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\nNo matching items"
+    "text": "This is my very first tiny data story.\nIt’s the weekend, end of 1st week of Block 3 at UBC MDS. All my assignments that were due at 6pm have been submitted. There is a small window of a break before we get to Monday and it all starts over. Anyway, I’ve been meaning to start a tiny blog (micro blog?) like this for a while, but never got to it, so now I’m finally here. You’re reading this because I finally found some time to put it all together.\nThe whole point of this tiny blog is to get me to practice looking at small bits and pieces of data regularly. Every now and then I come across some interesting small datasets, or I personally have some interesting small datasets from my own life that I’m interested in, and I want to try to use code and data analysis to answer some questions. So ya, that’s the point of this… micro blog. Let’s call it that for now.\nRight now, the goal is just to make sure everything works: the blog, the code, and the render. Everything should me more or less: load data, do analysis, add commentary, push blog post, and let quarto publish automatically. I don’t want to deal with the details of managing a blog site, so that’s why I’m letting quarto and github power all of this.\nWell, let’s start with our very first tiny data set just to make sure things are running as expected. Here I’m going to use python pandas and just create a small table of some of my favourite fruits. That is all, stay tuned for more!\n\nimport pandas as pd\n\ndf = pd.DataFrame({\n    \"fruit\": [\"apple\", \"banana\", \"kiwi\", \"guava\", \"mango\", \"pear\"],\n    \"rating\": [8, 6, 8, 9, 8, 7]\n})\ndf\n\n\n\n\n\n\n\n\nfruit\nrating\n\n\n\n\n0\napple\n8\n\n\n1\nbanana\n6\n\n\n2\nkiwi\n8\n\n\n3\nguava\n9\n\n\n4\nmango\n8\n\n\n5\npear\n7"
   }
 ]
