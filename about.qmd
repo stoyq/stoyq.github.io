@@ -19,4 +19,4 @@ about:
 
 ---
 
-About this blog
+Hi, my name is Johnson and on this blog I will post my tiny data science tinkerings and musings. I am currently studying in the Masters of Data Science program at the University of British Columbia.
