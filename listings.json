@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/detecting-ai-text.html",
       "/posts/kendama-cup-scores.html",
       "/posts/hello-tiny-data-world.html"
     ]
